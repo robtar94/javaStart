@@ -27,14 +27,14 @@ class Bank {
         address1.houseNumber = "B6";
         address1.apartamentNumber = "6HE";
         address1.cityName = "Birmingham";
-        address1.postalCode = 07-700;
+        address1.postalCode = 7 -700;
 
         Address address2 = new Address();
         address2.streetName = "Fullham Road";
         address2.houseNumber = "SW6";
         address2.apartamentNumber = "1 HS";
         address2.cityName = "London";
-        address2.postalCode = 07-700;
+        address2.postalCode = 7-700;
 
         //osoba  z roznym adresem
         Person person2 = new Person();
