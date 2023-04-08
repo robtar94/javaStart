@@ -22,13 +22,27 @@ class Bank {
         System.out.println("posiada konto bankowe z kwotą: " + account1.balance);
         System.out.println("oraz kredyt na kwotę: " + credit1.cashBorrowed);
 
+        Address address1 = new Address();
+        address1.streetName = "Trinity Road";
+        address1.houseNumber = "B6";
+        address1.apartamentNumber = "6HE";
+        address1.cityName = "Birmingham";
+        address1.postalCode = 07-700;
+
+        Address address2 = new Address();
+        address2.streetName = "Fullham Road";
+        address2.houseNumber = "SW6";
+        address2.apartamentNumber = "1 HS";
+        address2.cityName = "London";
+        address2.postalCode = 07-700;
+
         //osoba  z roznym adresem
         Person person2 = new Person();
         person2.firstName = "Steve";
         person2.lastName = "Cooper";
         person2.pesel = "910887887";
-        person2.legalAddress = "Trinity Road " + " Birmingham B6 6HE ";
-        person2.residenceAddress = "Fullham Road " + " London " + " SW6 1 HS";
+        person2.legalAddress = address1.streetName + " " + address1.cityName + " " + address1.houseNumber + " " + address1.apartamentNumber;
+        person2.residenceAddress = address2.streetName + " " + address2.cityName + " " + address2.houseNumber + " " + address2.apartamentNumber;
 
         Person person3 = new Person();
         person3.firstName = "Steve";
@@ -36,6 +50,7 @@ class Bank {
         person3.pesel = "9898989986";
         person3.legalAddress = person2.residenceAddress;
         person3.residenceAddress = person2.residenceAddress;
+
 
         BankAccount account2 = new BankAccount();
         account2.owner = person2;
